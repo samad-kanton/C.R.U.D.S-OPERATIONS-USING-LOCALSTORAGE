@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD OPERATIONS USING JAVASCRIPT/LOCALSTORAGE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h2>MANAGE PRODUCTS</h2>
+        <form role="form">
+            <div class="form-group">
+                <input type="text" id="title" placeholder="Product name..." required />
+            </div> 
+            <div class="row">
+                <div class="form-group">
+                    <input type="number" step=".01" min="0" id="qty" placeholder="Quantity..." required />
+                </div> 
+                <div class="form-group">
+                    <input type="number" step=".01" min="0" id="cp" placeholder="Cost Price..."  required/>
+                </div> 
+                <div class="form-group">
+                    <input type="number" step=".01" min="0" id="sp" placeholder="Selling Price.." required />
+                </div> 
+            </div> 
+            <button type="button">Cancel</button>          
+            <button type="submit">Save</button>          
+        </form>
+
+        <div id="output">
+            <h2>PRODUCTS LIST</h2>
+            <a href="javascript:void(0);" id="btnClearData">Empty Data[<span id="dataCount">0</span>]</a>
+            <input type="search" id="search" placeholder="Search...">
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>QTY</th>
+                    <th>COST</th>
+                    <th>RATE</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

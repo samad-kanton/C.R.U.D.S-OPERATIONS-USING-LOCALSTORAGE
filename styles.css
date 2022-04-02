@@ -1,0 +1,29 @@
+*{ box-sizing: border-box; }
+
+html, body{ margin: 0; padding: 0; font-family: 'Segoe UI'; }
+
+#container{ width: 600px; margin: 0 auto; }
+
+form{ text-align: right; } 
+
+input{ width: 100%; padding: 10px 5px; }
+
+.form-group{ margin-bottom: 20px; }
+
+.row{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+button{ cursor: pointer; border-radius: 7px; border: none; padding: 15px 30px; }
+button[type="button"]{ background: #ddd; color: #777; }
+button[type="submit"]{ background: dodgerblue; color: #fff; }
+
+table{ width: 100%; }
+tr:nth-child(even){ background: #eee; }
+th{ font-size: 16px; background: #000; color: #fff; padding: 10px; }
+td{ padding: 5px; }
+
+#btnEditProduct{ padding: 10px; background: green; color: #fff; }
+#btnDeleteProduct{ padding: 10px; background: #f00; color: #fff;}
+
+#output{ display: flex; justify-content: space-between; align-items: center; }
+
+[type="search"]{ width: 200px; }
